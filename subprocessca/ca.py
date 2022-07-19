@@ -50,14 +50,14 @@ def put(pv, *values):
     
 def main():
     try:
-        print get("IOC:BSY0:MP01:TTBLST")
-        print get("lclsdev93:aiExample1")
-        print get("IOC:BSY0:MP01:DBVERS")
-        print put(4, "lclsdev93:testai1")
-        print put(7, "lclsdev93:testai1")
-        print put(7.4, "lclsdev93:testai2")
-    except ValueError, e:
-        print 'Error: {0}'.format(e)
+        print(get("IOC:BSY0:MP01:TTBLST"))
+        print(get("lclsdev93:aiExample1"))
+        print(get("IOC:BSY0:MP01:DBVERS"))
+        print(put(4, "lclsdev93:testai1"))
+        print(put(7, "lclsdev93:testai1"))
+        print(put(7.4, "lclsdev93:testai2"))
+    except ValueError as e:
+        print('Error: {0}'.format(e))
 
 if __name__ == '__main__':
     status = main()
